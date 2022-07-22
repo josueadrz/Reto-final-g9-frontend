@@ -1,7 +1,9 @@
+
+
 body {
     /* background-color: #5390d9 */
     background-color: #FFDEE9;
-background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 
 }
 
@@ -65,14 +67,14 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
 .quienes-somos-img__container {
-    background: linear-gradient(rgba(0, 0, 0, .50)0%, rgba(0, 0, 0, .50)100% ), url(./img/quienes-somos.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .50)0%, rgba(0, 0, 0, .50)100%), url(./img/quienes-somos.jpg);
     width: 100%;
     height: 650px;
     border-radius: 0.5em;
     background-size: cover;
     box-shadow: 5px 8px 12px black;
     background-position: center;
-   
+
 }
 
 /* ---------estilo parrafo quienes somos--------- */
@@ -81,23 +83,28 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 .parrafo__container {
     max-width: 75%;
     align-items: center;
-    margin: 0 auto;
-  
-} 
+    margin: auto;
+
+}
 
 .parrafo-primario {
     font-size: 1.8rem;
-    color:rgb(83, 83, 79);
-    font-weight: 600;  
-    line-height:130%
+    color: rgb(83, 83, 79);
+    font-weight: 600;
+    line-height: 130%
 }
 
 .parrafo-secundario {
     font-size: 1.4rem;
-    color:rgb(102, 102, 98) ;
+    color: rgb(102, 102, 98);
 }
 
-hr {border: 3px solid #666; border-radius: 300px/10px; height: 0px; text-align: center;}
+hr {
+    border: 3px solid #666;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+}
 
 
 
@@ -107,14 +114,15 @@ hr {border: 3px solid #666; border-radius: 300px/10px; height: 0px; text-align: 
     .parrafo__container {
         max-width: 90%;
         align-items: center;
-        margin: 0 auto; 
-    } 
-    .parrafo-primario {
-        font-size: 1.2rem;
-        
+        margin: 0 auto;
     }
 
-    .parrafo-secundario{
+    .parrafo-primario {
+        font-size: 1.2rem;
+
+    }
+
+    .parrafo-secundario {
         font-size: 1.2rem;
     }
 }
