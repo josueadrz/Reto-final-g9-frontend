@@ -6,24 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="./index.css">
+
+    <!-- links de footer -->
     <link rel="stylesheet" href="./footer css/estilo.css">
     <link rel="stylesheet" href="./footer css/normalize.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monofett&family=Open+Sans:wght@400;600&family=Roboto+Condensed&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-
     <link rel="shortcut icon"
         href="data:image/png;base64,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"
         type="image/x-icon">
     <script src="https://kit.fontawesome.com/6b56541e1b.js" crossorigin="anonymous"></script>
 
+    <!-- links de header--- -->
+    <link rel="stylesheet" href="./header-css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monofett&family=Open+Sans:wght@400;600&family=Roboto+Condensed&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+
 </head>
 
 <body>
-    <main>
 
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-nav__container">
+                <a href="#" class="header-nav__link-logo-container">
+                    <img src="./img/Logo.png" alt="Logo" class="header-nav__link-logo" width="108" />
+                </a>
+                <div class="header-nav__menu-icon-container" id="menuIconContainer">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul class="header-nav__menu-list">
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">SERVICIOS</a>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">PRODUCTOS</a>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">PORTAFOLIO</a>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#" class="header-nav__menu-link">CONTACTANOS</a>
+                    </li>
+                    <li class="header-nav__menu-item header-nav__menu-item--close-icon"
+                        id="headerNavMenuCloseIconContainer">
+                        <i class="bi bi-x-circle"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ------------main------------ -->
+
+    <main>
         <section id="quienes-somos">
             <div class="quienes-somos__container">
                 <div class="quienes-somos-img__container">
@@ -32,15 +73,15 @@
                         <h2>QUIENES SOMOS</h2>
                     </div>
                 </div>
-<br>
+                <br>
                 <div class="parrafo-border__container">
                     <div class="parrafo__container">
-                        <p class="parrafo-primario">La historia de Lenovo ha sido siempre sobre dar forma a la
+                        <p class="parrafo-primario">La historia de Zona Smarphone ha sido siempre sobre dar forma a la
                             inteligencia informática para crear un mundo mejor. Con la cartera de productos tecnológicos
                             más amplia del mundo, hacemos realidad nuestra visión de Smarter Technology for All a través
                             de productos, soluciones, software y servicios que los individuos, las comunidades, las
                             empresas y poblaciones enteras necesitan para satisfacer su potencial.</p>
-<br>
+                        <br>
                         <p class="parrafo-secundario">En la actualidad, las industrias están remodelando y rediseñando
                             lo que hacen y cómo lo hacen. Atención sanitaria virtual. Educación remota. Compras más
                             inteligentes. La tecnología más inteligente debe ser accesible para todos. Como empresa
@@ -50,7 +91,7 @@
                             desarrollar tecnología inteligente. Estamos orgullosos de aprovechar la diversidad de
                             nuestros más de 63.000 empleados para atender a clientes en 180 mercados y redefinir y
                             ampliar los límites de lo que la tecnología puede hace</p>
-<br>
+                        <br>
                         <p class="parrafo-secundario">Creemos que podemos generar un mayor impacto en la sociedad cuando
                             trabajamos juntos. Por eso nos hemos comprometido con la Declaración Digital de GSMA que
                             identifica valores compartidos en todo el sector tecnológico para un futuro digital ético.
@@ -82,8 +123,8 @@
             </div>
         </section>
     </main>
+    <br>
 
-<br>
     <!-- -------footer---------- -->
     <footer>
         <div class="containter">
